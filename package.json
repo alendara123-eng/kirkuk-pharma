@@ -1,22 +1,16 @@
-PORT=8080
-JWT_SECRET=supersecret_kirkuk
-
-MYSQL_HOST=localhost
-MYSQL_PORT=3306
-MYSQL_USER=root
-MYSQL_PASSWORD=yourpassword
-MYSQL_DB=kirkuk_pharma
-
-# Admin panel login
-ADMIN_EMAIL=admin@kirkuk.local
-ADMIN_PASSWORD=StrongAdminPass123
-
-# Twilio (OTP SMS). لو ما عندك، الكود يطبع OTP بالكونسول
-TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-TWILIO_AUTH_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-TWILIO_FROM=+1xxxxxxxxxx
-
-# OTP settings
-OTP_EXP_MINUTES=5
-OTP_RESEND_WINDOW_SECONDS=60
-OTP_MAX_PER_HOUR=5
+{
+  "name": "kirkuk-pharma",
+  "version": "1.0.0",
+  "description": "Pharmacy delivery backend for Kirkuk",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5"
+  }
+}
