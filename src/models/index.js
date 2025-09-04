@@ -1,22 +1,25 @@
-import { Sequelize } from "sequelize";
-import dotenv from "dotenv";
+// src/index.js
+const express = require("express");
+const cors = require("cors");
 
-dotenv.config();
+const app = express();
+const PORT = process.env.PORT || 8080;
 
-export const sequelize = new Sequelize(
-  process.env.MYSQL_DB,
-  process.env.MYSQL_USER,
-  process.env.MYSQL_PASSWORD,
-  {
-    host: process.env.MYSQL_HOST,
-    port: process.env.MYSQL_PORT,
-    dialect: "mysql",
-    logging: false,
-  }
-);
+// Middlewares
+app.use(cors());
+app.use(express.json());
 
-// ✅ Import models
-import { User } from "./user.js";
-import { Pharmacy } from "./pharmacy.js";
-import { Medicine } from "./medicine.js";
-import { Captain } from "./capt
+// Route رئيسي
+app.get("/", (req, res) => {
+  res.send("🚀 Kirkuk Pharma API is running!");
+});
+
+// Route للتجربة
+app.get("/test", (req, res) => {
+  res.json({ message: "Test route working ✅" });
+});
+
+// شغل السيرفر
+app.listen(PORT, () => {
+  console.log(`✅ Server running on port ${PORT}`);
+});
