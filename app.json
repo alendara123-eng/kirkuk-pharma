@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "8a2c631a-4615-42a8-a005-ae45b983999a"
+      }
+    },
+    "android": {
+      "package": "com.dk0j.kirkukpharma"
+    }
+  }
+}
