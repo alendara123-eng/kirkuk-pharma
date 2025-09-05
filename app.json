@@ -1,12 +1,46 @@
 {
   "expo": {
-    "extra": {
-      "eas": {
-        "projectId": "8a2c631a-4615-42a8-a005-ae45b983999a"
-      }
+    "name": "أدويتي",
+    "slug": "adwiyati",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/535f3e07-10aa-4e72-90e1-72edd716e794",
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.adwiyati.app"
     },
     "android": {
-      "package": "com.dk0j.kirkukpharma"
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.adwiyati.app",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "runtimeVersion": {
+      "policy": "nativeVersion"
+    },
+    "sdkVersion": "49.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "535f3e07-10aa-4e72-90e1-72edd716e794"
+      }
     }
   }
 }

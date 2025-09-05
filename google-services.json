@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "855346191511",
+    "project_id": "kirkuk-pharma-c1bd4",
+    "storage_bucket": "kirkuk-pharma-c1bd4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855346191511:android:132fb80dd2dbb30969ddd2",
+        "android_client_info": {
+          "package_name": "com.dk0j.adwiti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjN522o_UM0Wn8oaXSQ9lms7zrurNtjug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
